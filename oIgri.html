@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tic Tac Toe Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="manifest" href="./manifest.json">
+    <!-- Add to home screen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Simon Game">
+    <link rel="apple-touch-icon" href="icons/icon-152x152.png">
+    <meta name="msapplication-TileImage" content="icons/icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#2F3BA2">
+</head>
+
+<body onload="init_game()">
+        <div class="alert alert-primary" role="alert" id="updateNotification" style="display:none;">
+                New version available! <a class="btn btn-primary" id="updateButton" href="#" role="button">Update</a>
+              </div>
+       
+    <center>
+        <h1>Tic Tac Toe</h1>
+    </center>
+   <dir>
+       <h3>O IGRI</h3>
+       <p>Iks-oks je igra za dva igraca koja se igra na papiru na polju sa 9 kvadrata (3x3). Igraci neizmenicno postavljaju svoje zankove (jedan koristi X, a drugi O) u slobodna polja. Cilj igre je spojiti tri znaka vodoravno, uspravno ili dijagonalno.</p>
+
+       <h3>Kako da uvek pobedite u igri Iks-Oks?</h3>
+       <p>Pogledajte kako garantovano nikada nećete izgubiti u ovoj popularnoj igri. Uvek počnite iz ugla, nije bitno kojeg.</p>
+       <p>Ako vaš suparnik postavi svoj znak na sredini, onda niko neće pobediti, ali ako nacrta svoj znak bilo gde drugde, pobeda vam je osigurana.</p>
+       <p>Ako pak suparnik kreće prvi, i stavi svoj znak u uglu, obavezno neka vaš prvi znak bude u centralnom polju, tako da ga sprečite u pobedi.</p>
+       <p>Ako ste vi bili prvi, a suparnik nije stavio svoj znak u sredinu, stavite svoj drugi znak ponovo u ugao, samo ne onaj nasuprot vašem prvom znaku. Suparnik će biti prisiljen da blokira i staviće svoj drugi znak između dva vaša a nakon toga imate dve mogućnosti. Ili stavite svoj treći znak u centralno polje, ili u ugao koji vam omogućuje spajanje s bilo kojim od pređašnjih znakova.</p>
+       <p>Vaš će protivnik moći da blokira samo jedan put, pa će drugi ostati otvoren za stvaranje pobedničkog niza od tri znaka.</p>
+       
+   </dir>
+   
+</body>
+<script src="skripta.js"></script>
+</html>
